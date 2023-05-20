@@ -1,0 +1,16 @@
+spring:
+  datasource:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/hiad?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+      type: com.alibaba.druid.pool.DruidDataSource
+      username: root
+      password: 123456
+wx:
+    miniapp:
+        configs:
+            - appid: wx557d03357b5325a6
+              secret: aa5aec1cf188b79611de3216ffea3ecc
+              msgDataFormat: JSON
+
+
+

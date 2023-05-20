@@ -1,0 +1,46 @@
+server:
+  port: 8081
+  address: 127.0.0.1
+
+spring:
+  freemarker:
+    check-template-location: false
+    cache: true
+    charset: UTF-8
+  profiles:
+    active: dev
+  jackson:
+    time-zone: GMT+8
+  data:
+    redis:
+      repositories:
+        enabled: false
+      database: 0
+      host: 127.0.0.1
+      port: 6379
+
+  mail:
+    email: 1910244723@qq.com
+    host: smtp.qq.com
+    port: 587
+    username: 1910244723
+    password: aqhlbnjqiauwegec
+    default-encoding: UTF-8
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration,org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration
+
+twoClass:
+  ApiKey: ojkaM2WCQpazzxGm
+  StudentId: fd28491ad91c11e9809400163e0e0cc2
+
+QiniuConfig:
+    AK: ZVpLG0lhZK_bB76QWb1y-2_qof9nHSMxeZjdOEDr
+    SK: ReSBDDV_wDHX_OTZ0hemP1Jbt0ZJAoHSpEcGNMe6
+    BK: hiad
+
+
+code:
+    expiration: 1740
+
+mybatis-plus:
+  mapper-locations: classpath:mybatis/*.xml,classpath:/mybatis-plus/*.xml
